@@ -1,0 +1,5 @@
+[
+  { "id": "s1", "title": "Summarize the history lecture", "subject": "History", "minutes": 25, "done": false },
+  { "id": "s2", "title": "Flashcards: cell organelles", "subject": "Biology", "minutes": 20, "done": false },
+  { "id": "s3", "title": "Past paper question 4", "subject": "Math", "minutes": 45, "done": false }
+]

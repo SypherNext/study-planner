@@ -1,0 +1,93 @@
+:root {
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --text: #1a1a2e;
+  --muted: #6b7280;
+  --line: #d5dae6;
+  --accent: #4a74c4;
+  font-family: system-ui, 'Segoe UI', Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+}
+
+.top-bar nav {
+  display: flex;
+  gap: 16px;
+}
+
+.top-bar a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.top-bar a.active {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.add-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.add-form label {
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.task-list {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-bar button[aria-pressed='true'] {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.progress {
+  position: relative;
+  height: 22px;
+  border-radius: 11px;
+  background: #e3e7f0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+}
+
+.progress-label {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  font-size: 13px;
+  line-height: 22px;
+}

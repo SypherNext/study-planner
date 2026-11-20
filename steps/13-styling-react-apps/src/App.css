@@ -1,0 +1,46 @@
+:root {
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --text: #1a1a2e;
+  --muted: #6b7280;
+  --line: #d5dae6;
+  --accent: #4a74c4;
+}
+
+[data-theme='dark'] {
+  --bg: #16181f;
+  --card: #22252e;
+  --text: #e8eaf0;
+  --muted: #9aa1b2;
+  --line: #3a3f4b;
+  --accent: #8fb0ee;
+}
+
+.app {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  padding: 24px;
+}
+
+.progress {
+  position: relative;
+  height: 22px;
+  border-radius: 11px;
+  background: #e3e7f0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+}
+
+.progress-label {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  font-size: 13px;
+  line-height: 22px;
+}
